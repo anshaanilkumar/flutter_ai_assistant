@@ -66,9 +66,9 @@ class _HomePageState extends State<HomePage> {
 
         ChatMessage? lastMessage = messages.firstOrNull;
 
-        if (lastMessage != null && lastMessage.user == geminiUser) {
+         if (lastMessage != null && lastMessage.user == geminiUser) {
           lastMessage = messages.removeAt(0);
-          lastMessage.text = response;
+          lastMessage.text += response;
           setState(() {
             messages = [lastMessage!, ...messages];
           });
