@@ -1,0 +1,1 @@
+const String GEMINI_API_KEY='AIzaSyAizijPeL5dNJ_rX1pmpIlDivZskyQI4DY';
